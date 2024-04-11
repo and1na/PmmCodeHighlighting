@@ -1,0 +1,25 @@
+{
+  "name": "pmm",
+  "displayName": "PMM",
+  "description": "PMM programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pmm",
+      "aliases": ["Python Minus Minus", "pmm"],
+      "extensions": [".pmm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pmm",
+      "scopeName": "source.pmm",
+      "path": "./syntaxes/pmm.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Python Minus Minus",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#functions"
+		}
+	
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pmm",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"comments": {
+			"name": "comments.pmm",
+			"begin": "#",
+			"end": "\\n",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pmm",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.pmm"
+}
